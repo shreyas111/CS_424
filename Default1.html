@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        var year='2015';
+        var airportCode='SFO';
+    </script>
+</head>
+<body>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <div class="pure-menu pure-menu-horizontal" style="background-color:black;">
+        <a href="#" class="pure-menu-heading pure-menu-link">Airport Wait Time Visualization</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"></li>
+            <li class="pure-menu-item"><a href="Default1.html" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="HTML/RadialTree.html" class="pure-menu-link">Compare Wait Times</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact Us</a></li>
+        </ul>
+    </div>
+    <iframe src="HTML/USMap.html" width="750" height="400" id="iusmap"></iframe>
+    <iframe src="HTML/clock.html" width="500" height="400" id="iclock" name="iclock" onload="populateClock();"></iframe>
+    <iframe src="HTML/WorldMap.html" width="750" height="350" id="iworldMap" name="iworldMap"></iframe>
+    <iframe src="HTML/LineChart.html" width="500" height="400" id="iLineChart" onload="populateLineChart();"></iframe>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://npmcdn.com/d3-horizon-chart/build/d3-horizon-chart.min.js"></script>
+
+    <script type="text/javascript">
+
+        function populateClock()
+        {
+            document.getElementById('iclock').contentWindow.readFile(airportCode, year);
+        }
+
+        function populateLineChart()
+        {
+            //console.log(year);
+            //document.getElementById('iLineChart').contentWindow.loadAirportData(airportCode,year);
+            document.getElementById('iLineChart').contentWindow.populateAllLines(airportCode, year);
+
+        }
+
+        function populateWorldMap()
+        {
+
+        }
+        function populateUSMap()
+        {
+
+        }
+        function populate2015()
+        {
+            year = '2015';
+            document.getElementById('iclock').contentWindow.readFile(airportCode, year);
+            //document.getElementById('iLineChart').contentWindow.loadAirportData(airportCode, year);
+            document.getElementById('iLineChart').contentWindow.populateAllLines(airportCode, year);
+
+        }
+        function populate2014()
+        {
+            year = '2014';
+            document.getElementById('iclock').contentWindow.readFile(airportCode, year);
+            //document.getElementById('iLineChart').contentWindow.loadAirportData(airportCode, year);
+            document.getElementById('iLineChart').contentWindow.populateAllLines(airportCode, year);
+
+        }
+        function populate2013()
+        {
+            year = '2013';
+            document.getElementById('iclock').contentWindow.readFile(airportCode, year);
+            //document.getElementById('iLineChart').contentWindow.loadAirportData(airportCode, year);
+            document.getElementById('iLineChart').contentWindow.populateAllLines(airportCode, year);
+
+        }
+        /*------------------------------------------Line Chart Functions---------------------------------------------------------*/
+        function RemoveLineSVG()
+        {
+            document.getElementById('iLineChart').contentWindow.removeSVG();
+        }
+        function getAirport()
+        {
+            document.getElementById('iLineChart').contentWindow.startTimer(airportCode);
+            document.getElementById('iclock').contentWindow.startTimer(airportCode);
+        }
+        function getAirportCode()
+        {
+            return airportCode;
+        }
+
+        /*****************************************************************US MAP**********************/
+        function UpdateAllViz(airportCode1)
+        {
+            airportCode = airportCode1;
+            //document.getElementById('iclock').contentWindow.d3.selectAll("#svggroup").remove();
+            document.getElementById('iclock').contentWindow.clearClock(airportCode, year);
+            document.getElementById('iLineChart').contentWindow.clearAllLines(airportCode, year);
+              
+        }
+
+    </script>
+
+</body>
+</html>

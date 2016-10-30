@@ -1,0 +1,136 @@
+{
+  "name": "United States",
+  "children": [
+	{
+		"name": "California",
+		"children":[
+		{"name": "San Francisco", "code" : "" , "time_2013":15, "time_2014": 15.01, "time_2015": 15.01},
+		{"name": "San Jose", "code" : "" , "time_2013":25, "time_2014": 15.01, "time_2015": 15.01},
+		{"name": "Los Angeles", "code" : "" , "time_2013":17, "time_2014": 15.01, "time_2015": 15.01}
+		]
+	},
+	{
+		"name": "Ohio",
+		"children":[
+		{	"name" : "Cincinnati Northern Kentucky Intl", "code" : "CVG" , "time_2013": 15.01, "time_2014": 13.22, "time_2015": 13.81}
+	  ]
+	},
+	{ 
+      "name": "Illinois",
+	  "children":[
+	  {	"name" : "Chicago Ohare Intl",  "code" : "ORD" , "time_2013": 18.58, "time_2014": 14.37, "time_2015": 14.32},
+	  { "name" : "Chicago Midway Intl",  "code" : "MDW" , "time_2013": 11.19 , "time_2014": 14.37, "time_2015": 7.31}
+	  ]
+    },
+	{
+		"name": "Colorado",
+		"children" : [
+		{ "name": "Denver Intl", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Florida",
+		"children" : [
+		{ "name": "Florida airport", "code" : "" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Georgia",
+		"children" : [
+		{ "name": "Hartsfield Jackson Atlanta Intl", "code" : "ATL" , "time_2013": 10.08, "time_2014": 10.00, "time_2015": 10.81}
+		]
+	},
+	{
+		"name": "Kentucky", 
+		"children" : [
+		{ "name": "Kentucy airport", "code" : "KEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Massachussets",  
+		"children" : [
+		{"name": "General Edward Lawrence Logan Intl", "code" : "BOS" , "time_2013": 19.86, "time_2014": 19.24, "time_2015": 17.22}
+		]
+	},
+	{
+		"name": "Michigan", 
+		"children" : [
+		{"name" : "Detroit Metro Wayne Co", "code" : "DTW" , "time_2013":15.71, "time_2014": 15.55, "time_2015": 15.01}
+		]
+	},
+	{
+		"name": "Minnesota",  
+		"children" : [
+		{ "name": "Minnesota airport", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Missouri", 
+		"children" : [
+		{ "name": "Missouri airport", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "North Carolina",  
+		"children" : [
+		{"name" : "Charlotte Douglas Intl","code" : "CLT" , "time_2013": 13.75 , "time_2014": 12.73, "time_2015": 9.21}
+		]
+	},
+	{
+		"name": "Nevada",
+		"children" : [
+		{ "name": "Nevada airport", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+    { 
+		"name": "Newyork",  
+		"children" : [
+		{ "name": "Newyork airport", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Oregon", 
+		"children" : [
+		{ "name": "Oregon airprot", "code" : "OR" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Pennsylvania",
+		"children": [
+		{ "name" : "Pensylvania Airport", "code" : "PEN" , "time_2013" : 9.18, "time_2014": 7.7, "time_2015": 9.31}
+		]
+	},
+	{
+		"name": "Mary Land",
+		"children": [
+		{ "name" : "Baltimore Washington Intl", "code" : "BWI" , "time_2013" : 9.18, "time_2014": 7.7, "time_2015": 9.31}
+		]
+	},
+	{
+		"name": "Hawaii",
+		"children" : [
+		{ "name": "Hawaiiiiiii" , "code" : "HAW" , "time_2013": 21.33, "time_2014": 11.98, "time_2015": 13.47}
+		]
+	},
+	{
+		"name": "Texas",
+		"children" : [
+		{ "name": "Dallas Fort Worth Intl" , "code" : "DFW" , "time_2013": 21.33, "time_2014": 11.98, "time_2015": 13.47},
+		{ "name": "Houston" , "code" : "" , "time_2013": 13, "time_2014": 15.01, "time_2015": 15.01},
+		{ "name": "Austin Bergstrom Intl" , "code" : "AUS" , "time_2013": 13.52, "time_2014": 16.38, "time_2015": 13.29}
+		]
+	},
+	{
+		"name": "Utah",  
+		"children" : [
+		{ "name": "Utah Airport", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	},
+	{
+		"name": "Virginia",  
+		"children" : [
+		{ "name": "Virginia Airport", "code" : "DEN" , "time_2013": 13.31, "time_2014": 13.33, "time_2015": 12.51}
+		]
+	}
+  ]
+}
